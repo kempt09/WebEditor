@@ -18,6 +18,7 @@
   "author": "Christopher, Jessica, Michael, Tom",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^6.5.2",
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
     "gulp": "^3.9.1",
