@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    title GSfiddle
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='main.css')
+  body
+    .container-fluid
+      .row.code-input
+        .col-md-4
+          h3 HTML
+          textarea#HTML.text-box
+        .col-md-4
+          h3 CSS
+          textarea#CSS.text-box
+        .col-md-4
+          h3 Javascript
+          textarea#JS.text-box
+    .container-fluid
+      .row.display-content
+        .col-xs-2
+          button#Run(onclick='collect()') Compile code
+        #display.col-xs-10
+  script(async='', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+  script(async='', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  script(async='', src='app.js')
