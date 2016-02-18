@@ -11,10 +11,9 @@ function collect(){
 
         var print = [
 
-            { code: '<div id="content>"'            },
+            { code: '<div id="content">' + '<style type="text/css" scoped="scoped">' + css},
             { code: '<div>' + html + '</div>'       },
-            { code: '<style>' + css + '</style>'    },
-            { code: '<script>' + js + '</script>'   },
+            { code: '</style>' + '<script>' + js + '</script>'   },
             { code: '</div>'                        }
         ];
 
